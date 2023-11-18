@@ -35,7 +35,7 @@ export const App = () => {
 
   useEffect(() => {
     setRate(Math.round((feedbackOptions.good / total) * 100));
-  }, [total]);
+  }, [total, feedbackOptions.good]);
 
   return (
     <Wrapp>
